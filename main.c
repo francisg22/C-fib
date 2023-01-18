@@ -1,20 +1,29 @@
 #include <stdio.h>
+int fib(int);
 //why cant i make main void 
 int main(void) {
+  
+  
+  int f;
+  //The initial declaration of variables is kinda wacky
+  printf( "Enter an integer to get the nth fibonacci number: ");
+  scanf ("%d",&f);
+  printf("%d",fib(f));
+  //scanf takes the intial arg which specifies what type is accepted, and the second arg assigns the input to a variable/memory location
+  //& returns the memory location, and scan f only takes the memory location not the variable itself
+  //kinda wierd
+  //https://www.geeksforgeeks.org/scanf-in-c/ this website is useful for all the percentage stuff
+ 
+  
+  return 0;
+}
+int fib(int x) {
   int a;
   int b;
   int num;
   int fn;
   int n;
-  char c[50];
-  int f;
-  //The initial declaration of variables is kinda wacky
-  printf( "Enter an integer to get the nth fibonacci number: ");
-  scanf ("%d",&f);
-  //scanf takes the intial arg which specifies what type is accepted, and the second arg assigns the input to a variable/memory location
-  //& returns the memory location, and scan f only takes the memory location not the variable itself
-  //kinda wierd
-  num = f;
+  num = x;
   a = 0;
   b = 1;
   
@@ -37,7 +46,5 @@ int main(void) {
     }
   }
   
-  printf("%d",fn);
-  
-  return 0;
+  return fn;
 }
