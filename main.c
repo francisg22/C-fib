@@ -6,9 +6,14 @@ int main(void) {
   int num;
   int fn;
   int n;
-  num = 5;
+  char c[50];
+  int f;
+  printf( "Enter an integer to get the nth fibonacci number: ");
+  scanf ("%d",&f);
+  num = f;
   a = 0;
   b = 1;
+  
   if (num == 1) {
     printf("%d",0);
 }
