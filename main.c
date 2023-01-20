@@ -1,6 +1,5 @@
 #include <stdio.h>
 int fib(int);
-//vs code test
 //why cant i make main void 
 int main(void) {
   
